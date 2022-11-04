@@ -1,0 +1,137 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3eae3;
+}
+
+.card__container {
+    width: 343px;
+    margin: 1.6rem;
+    background-color: var(--White);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 100%;
+    display: block;
+}
+
+article {
+    height: 370px;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__paragraph {
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    line-height: 3.2rem;
+}
+
+.card__prices {
+    display: flex;
+    align-items: center;
+
+}
+
+.card__new-price {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+}
+
+.card__old-price {
+    margin-left: 1.6rem;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+
+.card__button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+}
+.card__button:hover{
+    cursor: pointer;
+}
+
+.card__cart-logo {
+    margin-right: 1.6rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Light-Grey);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media(min-width:1024px){
+.card__container{
+    display: flex;
+    max-width: unset;
+    width: 600px;
+    height: 450px;
+    
+}
+.card__img{
+    width: 300px;
+    height: 100%;
+}
+article{
+    width: 300px;
+    height: 100%;
+}
+}
